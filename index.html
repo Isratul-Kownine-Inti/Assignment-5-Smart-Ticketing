@@ -130,7 +130,8 @@
 
 
             </div>
-            <p class="text-center mt-10"><button class="btn text-[#1DD100] bg-white border-[#1DD100] font-bold mt-10">See All
+            <p class="text-center mt-10"><button
+                    class="btn text-[#1DD100] bg-white border-[#1DD100] font-bold mt-10">See All
                     Offers</button></p>
         </section>
         <!-- form section -->
@@ -157,8 +158,8 @@
 
 
                         <div>
-                            <button class="btn text-[#1DD100] bg-[#1DD10026]"> <span><img src="./images/seat-green.png"
-                                        alt=""></span>0 seats left</button>
+                            <button id="seat-left" class="btn text-[#1DD100] bg-[#1DD10026]"> <span><img
+                                        src="./images/seat-green.png" alt=""></span>40 seats left</button>
                         </div>
                     </div>
                     <div class="bg-[#F7F8F8] mt-8 rounded-2xl p-8 space-y-5">
@@ -211,7 +212,7 @@
                                 <img class="w-20" src="./images/round-icon.png" alt="">
                             </div>
                         </div>
-                        <div class="seats grid grid-cols-5 mt-7 gap-8">
+                        <div class=" flex flex-row justify-evenly mt-7 gap-4">
                             <div class="flex flex-col gap-12 font-medium text-[#03071280] pl-4 mt-2">
                                 <p>A</p>
                                 <p>B</p>
@@ -224,55 +225,57 @@
                                 <p>I</p>
                                 <p>J</p>
                             </div>
-                            <div class="flex flex-col w-16 gap-6">
-                                <button class="btn  text-[#03071280]">A1</button>
-                                <button class="btn  text-[#03071280]">B1</button>
-                                <button class="btn  text-[#03071280]">C1</button>
-                                <button class="btn  text-[#03071280]">D1</button>
-                                <button class="btn  text-[#03071280]">E1</button>
-                                <button class="btn  text-[#03071280]">F1</button>
-                                <button class="btn  text-[#03071280]">G1</button>
-                                <button class="btn  text-[#03071280]">H1</button>
-                                <button class="btn  text-[#03071280]">I1</button>
-                                <button class="btn  text-[#03071280]">J1</button>
-                            </div>
+                            <div class="grid grid-cols-4 gap-14">
+                                <div class="flex flex-col w-16 gap-6">
+                                    <button class="btn  text-[#03071280] seat">A1</button>
+                                    <button class="btn  text-[#03071280] seat">B1</button>
+                                    <button class="btn  text-[#03071280] seat">C1</button>
+                                    <button class="btn  text-[#03071280] seat">D1</button>
+                                    <button class="btn  text-[#03071280] seat">E1</button>
+                                    <button class="btn  text-[#03071280] seat">F1</button>
+                                    <button class="btn  text-[#03071280] seat">G1</button>
+                                    <button class="btn  text-[#03071280] seat">H1</button>
+                                    <button class="btn  text-[#03071280] seat">I1</button>
+                                    <button class="btn  text-[#03071280] seat">J1</button>
+                                </div>
 
-                            <div class="flex flex-col w-16 gap-6 ">
-                                <button class="btn  text-[#03071280]">A2</button>
-                                <button class="btn  text-[#03071280]">B2</button>
-                                <button class="btn  text-[#03071280]">C2</button>
-                                <button class="btn  text-[#03071280]">D2</button>
-                                <button class="btn  text-[#03071280]">E2</button>
-                                <button class="btn  text-[#03071280]">F2</button>
-                                <button class="btn  text-[#03071280]">G2</button>
-                                <button class="btn  text-[#03071280]">H2</button>
-                                <button class="btn  text-[#03071280]">I2</button>
-                                <button class="btn  text-[#03071280]">J2</button>
-                            </div>
-                            <div class="flex flex-col w-16 gap-6">
-                                <button class="btn  text-[#03071280]">A3</button>
-                                <button class="btn  text-[#03071280]">B3</button>
-                                <button class="btn  text-[#03071280]">C3</button>
-                                <button class="btn  text-[#03071280]">D3</button>
-                                <button class="btn  text-[#03071280]">E3</button>
-                                <button class="btn  text-[#03071280]">F3</button>
-                                <button class="btn  text-[#03071280]">G3</button>
-                                <button class="btn  text-[#03071280]">H3</button>
-                                <button class="btn  text-[#03071280]">I3</button>
-                                <button class="btn  text-[#03071280]">J3</button>
-                            </div>
+                                <div class="flex flex-col w-16 gap-6 ">
+                                    <button class="btn  text-[#03071280] seat">A2</button>
+                                    <button class="btn  text-[#03071280] seat">B2</button>
+                                    <button class="btn  text-[#03071280] seat">C2</button>
+                                    <button class="btn  text-[#03071280] seat">D2</button>
+                                    <button class="btn  text-[#03071280] seat">E2</button>
+                                    <button class="btn  text-[#03071280] seat">F2</button>
+                                    <button class="btn  text-[#03071280] seat">G2</button>
+                                    <button class="btn  text-[#03071280] seat">H2</button>
+                                    <button class="btn  text-[#03071280] seat">I2</button>
+                                    <button class="btn  text-[#03071280] seat">J2</button>
+                                </div>
+                                <div class="flex flex-col w-16 gap-6">
+                                    <button class="btn  text-[#03071280] seat">A3</button>
+                                    <button class="btn  text-[#03071280] seat">B3</button>
+                                    <button class="btn  text-[#03071280] seat">C3</button>
+                                    <button class="btn  text-[#03071280] seat">D3</button>
+                                    <button class="btn  text-[#03071280] seat">E3</button>
+                                    <button class="btn  text-[#03071280] seat">F3</button>
+                                    <button class="btn  text-[#03071280] seat">G3</button>
+                                    <button class="btn  text-[#03071280] seat">H3</button>
+                                    <button class="btn  text-[#03071280] seat">I3</button>
+                                    <button class="btn  text-[#03071280] seat">J3</button>
+                                </div>
 
-                            <div class="flex flex-col w-16 gap-6">
-                                <button class="btn  text-[#03071280]">A4</button>
-                                <button class="btn  text-[#03071280]">B4</button>
-                                <button class="btn  text-[#03071280]">C4</button>
-                                <button class="btn  text-[#03071280]">D4</button>
-                                <button class="btn  text-[#03071280]">E4</button>
-                                <button class="btn  text-[#03071280]">F4</button>
-                                <button class="btn  text-[#03071280]">G4</button>
-                                <button class="btn  text-[#03071280]">H4</button>
-                                <button class="btn  text-[#03071280]">I4</button>
-                                <button class="btn  text-[#03071280]">J4</button>
+                                <div class="flex flex-col w-16 gap-6">
+                                    <button class="btn  text-[#03071280] seat">A4</button>
+                                    <button class="btn  text-[#03071280] seat">B4</button>
+                                    <button class="btn  text-[#03071280] seat">C4</button>
+                                    <button class="btn  text-[#03071280] seat">D4</button>
+                                    <button class="btn  text-[#03071280] seat">E4</button>
+                                    <button class="btn  text-[#03071280] seat">F4</button>
+                                    <button class="btn  text-[#03071280] seat">G4</button>
+                                    <button class="btn  text-[#03071280] seat">H4</button>
+                                    <button class="btn  text-[#03071280] seat">I4</button>
+                                    <button class="btn  text-[#03071280] seat">J4</button>
+                                </div>
                             </div>
 
 
@@ -283,46 +286,54 @@
                     <div class="seat-calculation px-5 flex-1 space-y-3">
                         <h5 class="text-[#030712] font-semibold text-2xl mt-4 mb-2">Select Your Seat</h5>
                         <hr class="border-dashed mb-4">
-                        <div class="bg-[#F7F8F8] p-5 rounded-2xl">
-                            <div class="grid grid-cols-3 gap-4 space-y-2">
-                                <div class="seat space-y-2 flex ">
-                                    <p class="text-[#030712] font-medium ">Seat</p>
-                                    <!-- <p class="bg-[#1DD100] h-3 w-5 px-2 text-white  rounded-full text-xs pt-2"></p> -->
+                        <div class="bg-[#F7F8F8] p-5 rounded-2xl ">
+                            <div id="selected-seats-container">
+                                <div class="">
+                                    <div class="seat  flex flex-row justify-between">
+                                        <p class="text-[#030712] font-bold">Seat <span id="seat-count"
+                                                class="bg-[#1DD100] text-white rounded-lg px-1">0</span></p>
+                                        <p class="text-[#030712] font-bold">Class</p>
+                                        <p class="text-[#030712] font-bold">Price</p>
+                                    </div>
+                                    <div class="selected-seats">
+
+                                    </div>
                                 </div>
 
-                                <div class="seat-class space-y-2">
-                                    <p class="text-[#030712] font-medium ">Class</p>
-                                    <p>Economy</p>
-                                    <p>Economy</p>
-                                </div>
-                                <div class="price space-y-2">
-                                    <p class="text-[#030712] font-medium">Price</p>
-                                </div>
+
                             </div>
                             <hr class="border-dashed mt-2">
                             <div class="flex flex-row justify-between text-[#030712] font-medium mt-2">
                                 <p>Total Price</p>
-                                <p>BDT 0000</p>
+                                <p>BDT :<span id="total-cost" class="text-xl">0000</span></p>
+                            </div>
+
+                            <hr class="border-dashed mt-2">
+                            <div id="discount-price"
+                                class="flex flex-row justify-between text-[#030712] font-medium mt-2">
+
                             </div>
 
 
-                            <div class=" mt-7 flex justify-center ">
+
+                            <div id="coupon-div" class=" mt-7 flex justify-center ">
                                 <label class="input flex items-center gap-2">
-                                    <input class="py-2 rounded-lg " type="text" placeholder="Have any coupon?" />
-                                    <button
-                                        class="btn my-3 ml-36 w-28 bg-[#1DD100] text-[#FFFFFF] font-semibold">Apply</button>
+                                    <input id="coupon-code" class="py-2 rounded-lg " type="text"
+                                        placeholder="Have any coupon?" />
+                                    <button id="apply-button" onclick="updateGrandTotal('apply-button')"
+                                        class=" btn  my-3 ml-36 w-28 bg-[#1DD100] text-[#FFFFFF] font-semibold ">Apply</button>
                                 </label>
                             </div>
 
                             <div class="flex flex-row justify-between mt-7 text-[#030712] font-medium">
                                 <p>Grand Total</p>
-                                <p>BDT 0000</p>
+                                <p>BDT :<span id="grand-total" class="text-xl">0000</span></p>
                             </div>
 
 
                         </div>
                         <div class="space-y-5">
-                            <div >
+                            <div>
                                 <label class="font-xl font-bold mb-2">Passenger Name*</label>
                                 <input type="text" placeholder="Enter your name"
                                     class="input input-bordered w-full h-14 mt-2 border-2 rounded-lg" />
@@ -339,14 +350,15 @@
                                 <input type="email" placeholder="Enter your email id"
                                     class="input input-bordered w-full h-14 mt-2 border-2 rounded-lg" />
                             </div>
-                            <button class="btn w-full rounded-lg bg-[#1DD100] text-[#FFFFFF] font-bold text-xl">Next</button>
+                            <button onclick="my_modal_1.showModal()" id="next-button"
+                                class="btn w-full rounded-lg bg-[#1DD100] text-[#FFFFFF] font-bold text-xl">Next</button>
 
-                            
-                    <div class="flex justify-around space-y-1 text-[#03071299]">
-                        <a class="underline" href="">Terms and Conditions</a>
-                        <a class="underline" href="">Cancellation Policy</a>
-    
-                    </div>
+
+                            <div class="flex justify-around space-y-1 text-[#03071299]">
+                                <a class="underline" href="">Terms and Conditions</a>
+                                <a class="underline" href="">Cancellation Policy</a>
+
+                            </div>
                         </div>
 
                     </div>
@@ -354,20 +366,43 @@
 
                 </div>
                 </div>
+
+
             </section>
 
         </section>
+
+        <!-- modal  -->
+
+        <dialog id="my_modal_1" class="modal">
+            <div class="modal-box flex flex-col items-center gap-2 p-5 ">
+                <img class="w-24" src="./images/success.png" alt="">
+                <h3 class="font-bold text-lg uppercase text-[#27AE60]">Success</h3>
+                <p class="text-[#4A4A4A] font-medium">Thank you for Booking Our Bus Seats. </p>
+                <p class="text-[#4A4A4A] font-medium ">We are working hard to find the best service and deals for you.
+                </p>
+                <span class="font-light">Shortly you will find a confirmation in your email.</span>
+                <div class="modal-action">
+                    <form method="dialog">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn bg-[#27AE60] text-white px-6 font-medium">Continue</button>
+                    </form>
+                </div>
+            </div>
+        </dialog>
+
 
 
     </main>
 
     <footer class="bg-[#030712] ">
-        <div class="flex justify-between mx-32 pt-10 mb-10 ">
+        <div class="flex justify-between mx-32 py-20 ">
             <div class="space-y-4">
                 <h2 class=" text-[#FFFFFF] font-bold text-3xl">P-Ticket</h2>
                 <p class="text-[#FFFFFFCC]">P-Ticket is a digital platform to make your
                     <br>
-                    daily commuting better.</p>
+                    daily commuting better.
+                </p>
             </div>
             <div class="space-y-4">
                 <p class="text-[#FFFFFFCC]">Download Our App</p>
@@ -380,19 +415,21 @@
                 </div>
             </div>
         </div>
-          <hr class="border-dashed mx-32 bg-[#FFFFFF4D]">
-     <div class="flex flex-row justify-between mx-32 mt-10">
-        <p class="flex-1 text-[#FFFFFF99] text-sm">@all rights reserved, P-Ticket services limited.2024</p>
-            
-         <div class="flex gap-5 text-[#FFFFFF] ">
-            <p>Terms & condition</p>            
-         <p>Return & refund policy</p>
-            <p>Privacy policy</p>
-         </div>
-     </div>
-       
-       
+        <hr class="border-dashed mx-32 bg-[#FFFFFF4D]">
+        <div class="flex flex-row justify-between mx-32 mt-10">
+            <p class="flex-1 text-[#FFFFFF99] text-sm">@all rights reserved, P-Ticket services limited.2024</p>
+
+            <div class="flex gap-5 text-[#FFFFFF] mb-20">
+                <p>Terms & condition</p>
+                <p>Return & refund policy</p>
+                <p>Privacy policy</p>
+            </div>
+        </div>
+
+
     </footer>
+    <!-- scripts  -->
+    <script src="/scripts/script.js"></script>
 </body>
 
 </html>
