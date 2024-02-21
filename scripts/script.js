@@ -85,12 +85,14 @@ for (const seat of allSeats) {
                 document.getElementById('grand-total').innerText = totalCost - discountedPrice;
 
                 const discountSection = document.getElementById('discount-price');
-                const discount = document.createElement('p');
+                const discount = document.createElement('p')
                 const discountAmount = document.createElement('p')
                 discount.innerText = "discounted Price";
                 discountAmount.innerText = "BDT :" + discountedPrice;
                 discountSection.appendChild(discount);
                 discountSection.appendChild(discountAmount);
+                const applyButton = document.getElementById('apply-button');
+                const couponDiv = document.getElementById('coupon-div');
                 couponDiv.classList.add('hidden');
             }
 
