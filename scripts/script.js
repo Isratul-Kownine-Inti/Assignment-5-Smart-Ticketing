@@ -1,4 +1,7 @@
-
+function goToTicketSection()
+{
+    document.getElementById('form-section').scrollIntoView({behavior:'smooth'});
+}
 const allSeats = document.getElementsByClassName('seat');
 
 
